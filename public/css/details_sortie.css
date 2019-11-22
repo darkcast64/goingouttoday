@@ -1,0 +1,13 @@
+body{
+    background: url("../img/accueil.jpg") no-repeat center fixed  ;
+    background-size: cover;
+}
+
+.sortie {
+    border:1px solid black;
+    box-shadow: 3px 3px 0px grey;
+    background-color:#EAF0EF;
+
+
+}
+
