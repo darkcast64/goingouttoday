@@ -6,7 +6,7 @@
 <nav class="navbar navbar-light bg-light static-top">
     <div class="container-fluid">
         <div class="row col-md-12 ">
-            <div class="offset-md-2 col-5 col-md m-0 m-md-2"><a class="btn btn-primary " href="{{ route('register') }}">Inscription</a></div>
+            
             <div class="offset-md-2  col-5 col-md m-0 m-md-2 pl-5"><a class="btn btn-danger" href="{{ route('logout') }}">se deconnecter</a></div>
 
         </div>
@@ -22,15 +22,10 @@
                 <h1 class="mb-5">Vous voulez partager votre hobbie? Vous voulez rencontrer de nouvelles personnes?Vous habitez le pays basque?</h1>
             </div>
             <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
-                <form action="{{route('login')}}">
-                    <div class="form-row">
+            <div class="offset-md-2 col-5 col-md m-0 m-md-2"><a class="btn btn-primary " href="/login">Connexion</a></div>
 
-                        <div class="offset-md-4 offset-2 col-9 col-md-3">
-                            <button type="submit" class="btn btn-block btn-lg btn-primary">Connexion!</button>
-                            <a href="/liste_sorties">lien de dev</a>
-                        </div>
-                    </div>
-                </form>
+                <p>pas encore inscrit?</p>
+                <div class="offset-md-2 col-5 col-md m-0 m-md-2"><a class="btn btn-danger " href="{{ route('register') }}">Inscription</a></div>
             </div>
         </div>
     </div>
