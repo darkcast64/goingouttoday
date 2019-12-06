@@ -53,7 +53,7 @@ class ProfileController extends Controller
         }
         // Persist user record to database
         $user->save();
-        dd($user);
+        // dd($user);
 //
 //         Return user back and show a flash message
         return view('liste_sorties',['user'=>$user]);

@@ -13,7 +13,7 @@ class ListeSortiesController extends Controller
     {
         $sorties = DB::table('sorties')->orderBy('created_at','desc')->get();
         $user = Auth::user();
-//dd($user);
+dd($sorties);
         return view('liste_sorties', ['sorties' => $sorties,'user'=>$user]);
     }
 }

@@ -17,7 +17,7 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/login', 'Auth\LoginController@showLogin')->name('login');
+// Route::get('/login', 'Auth\LoginController@showLogin')->name('login');
 
 
 
