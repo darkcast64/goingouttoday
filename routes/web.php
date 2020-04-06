@@ -17,7 +17,7 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/login', 'Auth\LoginController@showLogin')->name('login');
+// Route::get('/login', 'Auth\LoginController@showLogin')->name('login');
 
 
 
@@ -26,6 +26,9 @@ Route::get('/login', 'Auth\LoginController@showLogin')->name('login');
 Route::get('/formulaire_sortie',function(){
     return view('formulaire_sortie');
 });
+Route::get('/testadmin','AdminController@index');
+Route::get('/test','testController@index');
+Route::get('/liste_sorties','ListeSortiesController@index')->name('liste_sorties');
 
 Route::post('/formulaire_sortie_soumis','SortieController@formulaire')->name('formulaire');
 
@@ -39,14 +42,14 @@ Route::get('/profil/{id}','SortieController@profil');
 
 Route::group(['middleware'=>['auth']],function(){
 
-    Route::get('/liste_sorties','ListeSortiesController@index')->name('liste_sorties');
+    // Route::get('/liste_sorties','ListeSortiesController@index')->name('liste_sorties');
 
     Route::get('/nopermission','AdminController@nopermission')->name('nopersmission');
 
 //    <---------Appel du middleware admin pour vérifier si l'on a bien le role admin-------------->
 
     Route::group(['middleware'=>['admin']],function(){
-        Route::get('/admin','AdminController@index')->name('admin');
+        // Route::get('/admin','AdminController@index')->name('admin');
 });
 });
 Route::get('/remove_user/{id}','AdminController@remove_user')->name('remove_user');

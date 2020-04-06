@@ -2,6 +2,7 @@
 <link href="{{asset('css/landing-page.css')}}" rel="stylesheet">
 <body>
 
+
 <!-- Navigation -->
 <nav class="navbar navbar-light bg-light static-top">
     <div class="container-fluid">
@@ -14,7 +15,7 @@
 </nav>
 
 <!-- Masthead -->
-<header class="masthead text-white text-center">
+ <header class="masthead text-white text-center">
     <div class="overlay"></div>
     <div class="container">
         <div class="row">
@@ -29,7 +30,7 @@
             </div>
         </div>
     </div>
-</header>
+</header> 
 
 <!-- Icons Grid -->
 <section class="features-icons bg-light text-center">
@@ -196,6 +197,7 @@
 </footer>
 
 <!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="js/app.js"></script>
 <script src="{{ asset('js/bootstrap.js') }}"></script>
 <script src="{{ asset('js/jquery.min.js') }}"></script>
 
