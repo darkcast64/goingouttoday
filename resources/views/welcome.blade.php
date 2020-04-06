@@ -1,13 +1,10 @@
 @extends('layouts.app')
-<!-- <link href="{{asset('css/landing-page.css')}}" rel="stylesheet"> -->
+<link href="{{asset('css/landing-page.css')}}" rel="stylesheet">
 <body>
 
-<div class="content">
-    <div id="mainReactComponent" class="title m-b-md">
-    </div>
-</div>
+
 <!-- Navigation -->
-<!-- <nav class="navbar navbar-light bg-light static-top">
+<nav class="navbar navbar-light bg-light static-top">
     <div class="container-fluid">
         <div class="row col-md-12 ">
             
@@ -15,10 +12,10 @@
 
         </div>
     </div>
-</nav> -->
+</nav>
 
 <!-- Masthead -->
-<!-- <header class="masthead text-white text-center">
+ <header class="masthead text-white text-center">
     <div class="overlay"></div>
     <div class="container">
         <div class="row">
@@ -33,10 +30,10 @@
             </div>
         </div>
     </div>
-</header> -->
+</header> 
 
 <!-- Icons Grid -->
-<!-- <section class="features-icons bg-light text-center">
+<section class="features-icons bg-light text-center">
     <div class="container">
         <div class="row">
             <div class="col-lg-4">
@@ -68,10 +65,10 @@
             </div>
         </div>
     </div>
-</section> -->
+</section>
 
 <!-- Image Showcases -->
-<!-- <section class="showcase">
+<section class="showcase">
     <div class="container-fluid p-0">
         <div class="row no-gutters">
 
@@ -96,10 +93,10 @@
             </div>
         </div>
     </div>
-</section> -->
+</section>
 
 <!-- Testimonials -->
-<!-- <section class="testimonials text-center bg-light">
+<section class="testimonials text-center bg-light">
     <div class="container">
         <h2 class="mb-5">What people are saying...</h2>
         <div class="row">
@@ -126,10 +123,10 @@
             </div>
         </div>
     </div>
-</section> -->
+</section>
 
 <!-- Call to Action -->
-<!-- <section class="call-to-action text-white text-center">
+<section class="call-to-action text-white text-center">
     <div class="overlay"></div>
     <div class="container">
         <div class="row">
@@ -150,10 +147,10 @@
             </div>
         </div>
     </div>
-</section> -->
+</section>
 
 <!-- Footer -->
-<!-- <footer class="footer bg-light">
+<footer class="footer bg-light">
     <div class="container">
         <div class="row">
             <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
@@ -197,7 +194,7 @@
             </div>
         </div>
     </div>
-</footer> -->
+</footer>
 
 <!-- Bootstrap core JavaScript -->
 <script type="text/javascript" src="js/app.js"></script>

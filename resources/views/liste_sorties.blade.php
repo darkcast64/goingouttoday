@@ -66,9 +66,28 @@
         </div>
     </div>
 </div>
+<div class="row offset-2">
+    @foreach ($sorties as $sortie)
 
-
-@foreach ($sorties as $sortie)
+    <div class="col-sm-6">
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">{{ $sortie->nom }}</h5>
+                <h6 class="card-subtitle mb-2 text-muted">{{ $sortie->date }}</h6>
+                <p class="card-text">{{ $sortie->description }}</p>
+                <form method="post" action="{{route('inscription_sortie') }}">
+                        @csrf
+                        <div class=" col-6 card-link">
+                            <button name="inscription_sortie" type="submit" value="{{ $sortie->id }}">S'inscrire</button>
+                        </div>
+                    </form>
+                <a href="/details/{{{$sortie->id}}}" class="card-link">Details</a>
+            </div>
+        </div>
+    </div>    
+    @endforeach
+</div>
+<!-- @foreach ($sorties as $sortie)
     <div class="container sortie mt-2 col-10 col-md-8 ">
         <div class="row">
             <div class="offset-6 col-6">{{ $sortie->nom }}</div>
@@ -95,8 +114,8 @@
             <div class="col-4"><a href="/details/{{{$sortie->id}}}" style="color:  purple !important;">Details</a></div>
         </div>
     </div>
-    @endforeach
-    </div>
+    @endforeach -->
+    
 
 </body>
 </html>
