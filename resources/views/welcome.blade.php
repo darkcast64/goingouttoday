@@ -17,7 +17,7 @@
 <!-- Masthead -->
 
 <header class="masthead text-white text-center pt-0">
-=======
+
 
     <div class="overlay"></div>
     <div class="container">
