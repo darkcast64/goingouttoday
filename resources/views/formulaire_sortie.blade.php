@@ -2,7 +2,7 @@
 
 <link href="{{asset('css/formulaire_sortie.css')}}" rel="stylesheet">
 <body>
-<form class="col-6" method="post" action="{{route('formulaire')}}">
+<form class="col-6 m-auto" method="post" action="{{route('formulaire')}}">
     @csrf
     <div class="form-group">
         <label for="exampleFormControlInput1" style="color:black;">Nom de la sortie</label>
@@ -24,8 +24,12 @@
     </div>
     <input type="submit" value="Envoyer">
 </form>
-<a href="/liste_sorties" style="color:white !important;"><div class="col-md-1 col-4 mt-4 btn btn-primary ml-1 d-flex align-items-center justify-content-center">Retour</div></a>
+<a href="/liste_sorties" style="color:white !important;"><div class="col-md-1 col-4 m-auto btn btn-primary ml-1 d-flex align-items-center justify-content-center">Retour</div></a>
 <!-- Bootstrap core JavaScript -->
+
+
+
 <script src="{{ asset('js/bootstrap.js') }}"></script>
 <script src="{{ asset('js/jquery.min.js') }}"></script>
+
 </body>

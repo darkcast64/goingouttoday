@@ -14,7 +14,8 @@ class AdminController extends Controller
 //<----- liste des utilisateurs et des sorties injectées dans la vue admin_liste_users--------->
         $users=User::all();
         $sorties=Sortie::all();
-        return view ('admin_liste_users',['users'=>$users,'sorties'=>$sorties]);
+        $data=json_encode(['users'=>$users,'sorties'=>$sorties]);
+        return $data;
     }
 
     public function nopermission()

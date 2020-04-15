@@ -66,37 +66,36 @@
         </div>
     </div>
 </div>
+<div class="row offset-2">
+    @foreach ($sorties as $sortie)
 
 
 @foreach ($sorties as $sortie)
-    <div class="container sortie mt-2 col-10 col-md-8 ">
-        <div class="row">
-            <div class="offset-6 col-6">{{ $sortie->nom }}</div>
-        </div>
-        <div class="row">
-            <div class="  col-3"><p>Date : {{ $sortie->date }}</p></div>
-        </div>
-        <div class="row">
-            <div class=" col-6">{{ $sortie->description }}</div>
-        </div>
-        <div class="row">
-            <div class=" col-6"><p>Lieu : {{ $sortie->lieu }}</p></div>
-        </div>
-        <div class="row">
-            <div class=" col-6"><p>Auteur : {{ $sortie->auteur }}</p></div>
-        </div>
-        <div class="row">
-            <form method="post" action="{{route('inscription_sortie') }}">
+    
+
+    <div class="card offset-3 col-6 mt-2 p-0">
+  <div class="card-header ">
+  {{ $sortie->nom }}
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Date :{{ $sortie->date }}</h5>
+    <p class="card-text">Description :{{ $sortie->description }}</p>
+    <p class="card-text">Lieu :{{ $sortie->lieu }}</p>
+    <p class="card-text">Auteur :{{ $sortie->auteur }}</p>
+
+    <form method="post" action="{{route('inscription_sortie') }}">
                 @csrf
                 <div class=" col-6">
                     <button name="inscription_sortie" type="submit" value="{{ $sortie->id }}">S'inscrire</button>
                 </div>
             </form>
-            <div class="col-4"><a href="/details/{{{$sortie->id}}}" style="color:  purple !important;">Details</a></div>
-        </div>
-    </div>
+
+    
+  </div>
+</div>
     @endforeach
     </div>
+
 
 </body>
 </html>
