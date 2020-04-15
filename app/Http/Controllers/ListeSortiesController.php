@@ -15,7 +15,8 @@ class ListeSortiesController extends Controller
         // $sorties=json_encode($sorties);
 
         $user = Auth::user();
-        // return $sorties;
+
+
         return view('liste_sorties', ['sorties' => $sorties,'user'=>$user]);
     }
 }
