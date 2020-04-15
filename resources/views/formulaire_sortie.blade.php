@@ -26,6 +26,10 @@
 </form>
 <a href="/liste_sorties" style="color:white !important;"><div class="col-md-1 col-4 m-auto btn btn-primary ml-1 d-flex align-items-center justify-content-center">Retour</div></a>
 <!-- Bootstrap core JavaScript -->
+
+
+
 <script src="{{ asset('js/bootstrap.js') }}"></script>
 <script src="{{ asset('js/jquery.min.js') }}"></script>
+
 </body>

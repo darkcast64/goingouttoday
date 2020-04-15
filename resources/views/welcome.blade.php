@@ -2,10 +2,7 @@
 <link href="{{asset('css/landing-page.css')}}" rel="stylesheet">
 <body>
 
-<!-- <div class="content">
-    <div id="mainReactComponent" class="title m-b-md">
-    </div>
-</div> -->
+
 <!-- Navigation -->
 <nav class="navbar navbar-light bg-light static-top">
     <div class="container-fluid">
@@ -18,7 +15,10 @@
 </nav>
 
 <!-- Masthead -->
+
 <header class="masthead text-white text-center pt-0">
+=======
+
     <div class="overlay"></div>
     <div class="container">
         <div class="row">
@@ -33,7 +33,10 @@
             </div>
         </div>
     </div>
+
 </header>
+=======
+
 
 <!-- Icons Grid -->
 <section class="features-icons bg-light text-center">
@@ -69,10 +72,6 @@
         </div>
     </div>
 </section>
-
-
-
-
 
 
 <!-- Footer -->
